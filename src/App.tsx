@@ -1,3 +1,6 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import PrivacyPolicy from "./PrivacyPolicy";
+
 interface Project {
   name: string;
   description: string;
@@ -82,7 +85,7 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
-export default function App() {
+function Home() {
   return (
     <div className="min-h-screen bg-stone-50 font-sans">
       {/* Hero */}
@@ -124,8 +127,22 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-stone-200 py-8 text-center text-xs text-stone-400">
-        © {new Date().getFullYear()} yyyerin. All rights reserved.
+        <p>© {new Date().getFullYear()} yyyerin. All rights reserved.</p>
+        <Link to="/privacy" className="mt-1 inline-block hover:text-amber-500 transition-colors">
+          개인정보처리방침
+        </Link>
       </footer>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
