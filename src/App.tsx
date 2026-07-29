@@ -55,14 +55,14 @@ const projects: Project[] = [
   {
     name: "invitation-portfolio",
     description: "청첩장 포트폴리오",
-    url: "https://github.com/hyr0208/invitation-portfolio",
+    url: "https://invite.yyyerin.co.kr",
     emoji: "💌",
     tags: ["청첩장", "포트폴리오"],
   },
   {
     name: "wedding-invitation-letter",
     description: "모바일 청첩장",
-    url: "https://github.com/hyr0208/wedding-invitation-letter",
+    url: "https://wedding.yyyerin.co.kr",
     emoji: "💍",
     tags: ["청첩장"],
   },
@@ -142,7 +142,10 @@ function Home() {
       {/* Footer */}
       <footer className="border-t border-stone-200 py-8 text-center text-xs text-stone-400">
         <p>© {new Date().getFullYear()} yyyerin. All rights reserved.</p>
-        <Link to="/privacy" className="mt-1 inline-block hover:text-amber-500 transition-colors">
+        <Link
+          to="/privacy"
+          className="mt-1 inline-block hover:text-amber-500 transition-colors"
+        >
           개인정보처리방침
         </Link>
       </footer>
