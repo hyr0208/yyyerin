@@ -18,6 +18,13 @@ const projects: Project[] = [
     tags: ["포트폴리오"],
   },
   {
+    name: "portfolio-2026",
+    description: "예린의 개발 포트폴리오 2026 버전",
+    url: "https://portfolio2026.yyyerin.co.kr",
+    emoji: "🌟",
+    tags: ["포트폴리오2026"],
+  },
+  {
     name: "LunchPing",
     description: "내 주변 맛집을 빠르고 간편하게 찾아보세요.",
     url: "https://lunchping.yyyerin.co.kr",
