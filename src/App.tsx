@@ -52,6 +52,20 @@ const projects: Project[] = [
     emoji: "☕",
     tags: ["카페", "멀티플레이"],
   },
+  {
+    name: "invitation-portfolio",
+    description: "청첩장 포트폴리오",
+    url: "https://github.com/hyr0208/invitation-portfolio",
+    emoji: "💌",
+    tags: ["청첩장", "포트폴리오"],
+  },
+  {
+    name: "wedding-invitation-letter",
+    description: "모바일 청첩장",
+    url: "https://github.com/hyr0208/wedding-invitation-letter",
+    emoji: "💍",
+    tags: ["청첩장"],
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
