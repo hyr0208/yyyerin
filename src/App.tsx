@@ -73,6 +73,34 @@ const projects: Project[] = [
     emoji: "💍",
     tags: ["청첩장"],
   },
+  {
+    name: "note-forest",
+    description: "여러 기기에서 이어 쓰는 개인 메모 웹앱",
+    url: "https://notes.yyyerin.co.kr",
+    emoji: "🌲",
+    tags: ["메모", "Supabase"],
+  },
+  {
+    name: "birthday-little-archive",
+    description: "친구 생일을 위한 축하 웹페이지",
+    url: "https://hbd.yyyerin.co.kr",
+    emoji: "🎂",
+    tags: ["생일", "아카이브"],
+  },
+  {
+    name: "내 차례",
+    description: "공공임대·행복주택 예비입주자 순번과 신청 현황을 관리하는 모바일 앱",
+    url: "https://github.com/hyr0208/housing-tracker-mobile",
+    emoji: "🏠",
+    tags: ["모바일앱", "React Native"],
+  },
+  {
+    name: "나를봄",
+    description: "약·영양제 검색과 건강정보 기반 맞춤 건강관리 앱",
+    url: "https://github.com/hyr0208/nareulbom-mobile",
+    emoji: "🌱",
+    tags: ["모바일앱", "React Native"],
+  },
 ];
 
 function ProjectCard({ project }: { project: Project }) {
